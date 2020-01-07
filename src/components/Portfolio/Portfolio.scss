@@ -1,0 +1,42 @@
+.portfolio {
+  margin: 130px 0;
+
+  .frontend-projects {
+    height: auto;
+    background: #39bb8d;
+    padding-bottom: 200px;
+
+    .projects-wrap {
+      width: 76%;
+      margin: auto;
+      
+      .inverse {
+        color: #f3fffb;
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+.top-bar {
+  display: flex;
+  height: 35px;
+  width: 100%;
+
+  .stripes {
+    width: 55%;
+    background: repeating-linear-gradient(
+      45deg,
+      #007c4f,
+      #007c4f 5px,
+      #39bb8d 5px,
+      #39bb8d 10px
+    );
+  }
+
+  .light-bar {
+    width: 45%;
+    background: #6adab3;
+    box-shadow: 0px 5px 2px 0px #0000001f;
+  }
+}

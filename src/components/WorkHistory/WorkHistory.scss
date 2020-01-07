@@ -1,0 +1,70 @@
+.work {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+
+  .tab-list {
+    width: 19%;
+
+    li {
+      list-style: none;
+      padding: 15px;
+      font-weight: 500;
+      border-left: 2px #a3b1b1 solid;
+      cursor: pointer;
+
+      &[aria-selected="true"] {
+        background: #6adab3;
+        border-left: 2px #000000 solid;
+
+        &:hover {
+          background: #6adab3;
+          cursor: default;
+        }
+      }
+
+      &:hover {
+        background: #adebd5;
+        border-left: 2px #000000 solid;
+      }
+    }
+  }
+
+  .tab-content {
+    margin: 10px 20px;
+    width: 81%;
+
+    .title {
+      margin-bottom: 9px;
+    }
+
+    .date {
+      padding-bottom: 12px;
+      font-size: 14px;
+    }
+
+    p {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+      line-height: 1.70em;
+
+      &::before {
+        content: "\27A4";
+        color: #39bb8d;
+        position: absolute;
+        left: 0;
+      }
+
+      &:nth-of-type(1) {
+        margin-top: 27px;
+      }
+    }
+
+    .green {
+      color: #39bb8d;
+    }
+  }
+}

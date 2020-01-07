@@ -1,0 +1,110 @@
+.backend-projects {
+  padding-top: 100px;
+  
+  .section-wrap {
+    min-height: 90vh;
+    margin: auto;
+    width: 76%;
+
+    .grid-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+  
+      .card {
+        height: 350px;
+        flex-basis: 23%;
+        background: #d6d6d6;
+        margin: 15px 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+  
+        .background-image {
+          // background: yellow;
+          height: 100%;
+          width: 100%;
+          // background-position: center;
+          // background-size: cover;
+        }
+        .content {
+          height: 200px;
+          background: white;
+          width: 85%;
+          position: absolute;
+          bottom: 10px;
+          padding: 15px 10px;
+  
+          .heading {
+            height: 50%;
+  
+            .desc-container {
+    
+              .desc {
+                line-height: 20px;
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                margin: 0 1px;
+              }
+            }
+  
+            .project-title {
+              font-size: 25px;
+              color: #2e483f;
+              font-weight: 600;
+            }
+          }
+  
+          .details {
+            height: 50%;
+            width: 100%;
+            display: flex;
+  
+            .techs {
+              width: 70%;
+              display: flex;
+              flex-direction: column;
+  
+              span {
+                font-size: 13px;
+                letter-spacing: 0.05em;
+                color: #909090;
+  
+                &::before {
+                  content: " - ";
+                }
+              }
+            }
+            .links {
+              width: 30%;
+              border-left: 1px solid #d4d4d4a1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+  
+              .link {
+                width: 33px;
+                height: 33px;
+                padding: 8px;
+                margin: 0 2px;
+                fill: #484a58;
+  
+                &:hover {
+                  fill: #39bb8d;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.grid-container::after {
+  content: "";
+  flex: auto;
+}

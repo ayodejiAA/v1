@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es2015",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+  },
+  "files": [ 
+    "custom.d.ts" 
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
