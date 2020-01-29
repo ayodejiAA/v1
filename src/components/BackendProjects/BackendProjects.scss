@@ -14,18 +14,24 @@
       .card {
         height: 350px;
         flex-basis: 23%;
-        background: #d6d6d6;
+        background: #6adab3;
         margin: 15px 10px;
         position: relative;
         display: flex;
         justify-content: center;
+
+        &:hover {
+          .background-image {
+            filter: none;
+            mix-blend-mode: normal;
+          }
+         
+        }
   
         .background-image {
-          // background: yellow;
-          height: 100%;
           width: 100%;
-          // background-position: center;
-          // background-size: cover;
+          mix-blend-mode: multiply;
+          filter: grayscale(100%) contrast(1)
         }
         .content {
           height: 200px;
@@ -42,7 +48,8 @@
     
               .desc {
                 line-height: 20px;
-                font-size: 10px;
+                font-size: 8px;
+                font-weight:500;
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 margin: 0 1px;
@@ -50,7 +57,7 @@
             }
   
             .project-title {
-              font-size: 25px;
+              font-size: 24px;
               color: #2e483f;
               font-weight: 600;
             }

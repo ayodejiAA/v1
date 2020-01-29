@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import { OpenFolderIcon, ExternalLinkIcon, GithubLinkIcon } from '../../assets/images/';
+import { OpenFolderIcon, ExternalLinkIcon, GithubLinkIcon } from '../../assets/static/';
 import './NotableProjects.scss';
 
 export const NotableProjects: FunctionComponent = () => (

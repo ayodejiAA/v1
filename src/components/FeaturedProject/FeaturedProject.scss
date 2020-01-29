@@ -1,5 +1,6 @@
 .featured-project {
   height: 605px;
+  margin-bottom: 20px;
   display: flex;
 
   &.switch {
@@ -16,9 +17,17 @@
     }
   }
 
-  .image {
+  .image-section {
     width: 45%;
     background: #6adab3;
+
+    .image {
+      background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      height: 100%;
+      // blend-mode: multiply;
+    }
   }
 
   .details {
@@ -31,7 +40,7 @@
       width: 76%;
 
       .project-type-name {
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 600;
         color: #39bb8d;
         letter-spacing: 1px;

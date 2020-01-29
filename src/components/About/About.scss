@@ -15,19 +15,25 @@
     position: inherit;
     height: 100%;
 
-    .my-image {
+    .image-section {
       width: 40%;
-      display: flex;
-      justify-content: center;
+      padding: 0 20px;
+
+      .image {
+        background-size: cover;
+        background-position: center;
+        height: 100%
+      }
     }
 
     .about-me {
       width: 60%;
-      position: inherit;
-      top: 74px;
+      height: 80%;
+      padding: 74px 5px 0 5px;
+
 
       .text-pointer {
-        color: #00000073
+        color: #00000073;
       }
 
       .greeting-text {
@@ -44,16 +50,13 @@
         color: #adebd5;
         font-size: 70px;
       }
-
-      .description {
-        width: 65%;
-        .text {
-          margin-top: 35px;
-          color: #fcffff;
-          font-weight: 500;
-          font-size: 17px;
-          line-height: 1.5em;
-        }
+      .text {
+        margin-top: 30px;
+        max-width: 34em;
+        color: #fcffff;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.5em;
       }
     }
   }

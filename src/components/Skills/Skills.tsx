@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import { ToolsIcon, RecycleIcon, OthersIcon, JavaScriptIcon, Nodejs } from '../../assets/images/index';
+import { ToolsIcon, RecycleIcon, OthersIcon, JavaScriptIcon, Nodejs } from '../../assets/static/';
 
 import './Skills.scss';
 

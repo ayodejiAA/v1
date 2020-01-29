@@ -1,4 +1,4 @@
-export const data = [
+export default [
   {
     name: "Andela",
     title: "Software Engineer",

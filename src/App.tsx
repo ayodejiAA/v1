@@ -7,7 +7,7 @@ import { SkillsSection } from './components/Skills/Skills';
 import { Portfolio } from './components/Portfolio/Portfolio';
 import { Footer } from './components/Footer/Footer';
 
-import { data } from './data';
+import data from './data';
 
 const App: FunctionComponent = () => (
   <>

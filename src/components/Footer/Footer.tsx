@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TwitterIcon, GithubLinkIcon, LinkedInIcon } from '../../assets/images/';
+import { TwitterIcon, GithubLinkIcon, LinkedInIcon } from '../../assets/static/';
 import "./Footer.scss";
 
 export const Footer = () => (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ExternalLinkIcon, GithubLinkIcon, DocLinkIcon } from '../../assets/images/';
+import { ExternalLinkIcon, GithubLinkIcon, DocLinkIcon } from '../../assets/static';
 import './BackendProjects.scss';
 
 
@@ -15,8 +15,7 @@ export const BackendProjects = () => (
 
       <div className="grid-container">
         <div className="card">
-          <div className="background-image" />
-
+          <div className="background-image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
           <div className="content">
             <div className="heading">
               <div className="desc-container">
