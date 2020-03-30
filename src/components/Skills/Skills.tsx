@@ -25,8 +25,8 @@ export const SkillsSection: FunctionComponent = () => (
         <div><Nodejs className="icon" /> </div>
         <div><JavaScriptIcon className="icon" /> </div>
       </div>
-      <div className="tools-section">
 
+      <div className="tools-section">
         <div className="skills-wrap">
           <h3 className="skills-heading">
             <RecycleIcon className="header-icon" />
@@ -52,7 +52,6 @@ export const SkillsSection: FunctionComponent = () => (
           <p>Travis CI </p>
         </div>
         <div className="skills-wrap">
-
         </div>
       </div>
     </div>

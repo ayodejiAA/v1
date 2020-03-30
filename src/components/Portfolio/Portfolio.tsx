@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react';
 import { FeaturedProject } from '../FeaturedProject/FeaturedProject';
 import { NotableProjects } from '../NotableProjects/NotableProjects';
 import { BackendProjects } from '../BackendProjects/BackendProjects';
+
 import "./Portfolio.scss";
 
 export const Portfolio: FunctionComponent = () => (
@@ -14,7 +15,7 @@ export const Portfolio: FunctionComponent = () => (
         <div className="light-bar" />
       </div>
 
-      <div className="projects-wrap">
+      <div className="projects-wrap container">
         <div className="section-description inverse">
           <span className="tagline">Some projects I have worked on</span>
           <p className="section-name">Portfolio</p>

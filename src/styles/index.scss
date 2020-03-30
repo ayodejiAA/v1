@@ -1,18 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+@import 'colors';
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  padding: 20px 10px;
-  background: #eceeeb;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  background: $darkest-blue;
+  color: hsla(203, 36%, 82%, 1);
+  fill: $soft-yellow;
+  line-height: 1.3;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
+}
+
+.section-description {
+  color: $soft-yellow;
+
+  .tagline {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .section-name {
+    margin: 30px 0;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+}
+
+.container {
+  margin: auto;
+  min-height: 100vh;
+  width: 80%;
+  max-width: 1058px;
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-bar {
+  display: flex;
+  height: 35px;
+  width: 100%;
+
+  .stripes {
+    width: 55%;
+    background: repeating-linear-gradient(
+      45deg,
+      $darkest-blue,
+      $darkest-blue 5px,
+      $blue 5px,
+      $blue 10px
+    );
+  }
+
+  .light-bar {
+    width: 45%;
+    background: $blue;
+    box-shadow: 0px 5px 4px 0px $darkest-blue;
+  }
+}
+
+
+
+@media screen and (max-width:926px) {
+  .container {
+    width: 90%
+  }
+}
+
+
+
+@media screen and (max-width:500px) {
+ .section-description {
+   .section-name {
+     font-size: 26px;
+     margin-top: 5px;
+   }
+ }
 }

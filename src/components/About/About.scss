@@ -1,18 +1,10 @@
-.about {
-  height: 550px;
-  position: relative;
+@import "../../styles/colors";
 
-  .about-background {
-    background: #39bb8d;
-    width: 100%;
-    height: 73%;
-    bottom: 0;
-    position: absolute;
-  }
+.about {
+  height: 26em;
 
   .about-body {
     display: flex;
-    position: inherit;
     height: 100%;
 
     .image-section {
@@ -22,33 +14,28 @@
       .image {
         background-size: cover;
         background-position: center;
-        height: 100%
+        height: 100%;
       }
     }
 
     .about-me {
       width: 60%;
-      height: 80%;
-      padding: 74px 5px 0 5px;
-
-
-      .text-pointer {
-        color: #00000073;
-      }
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
 
       .greeting-text {
-        color: #adebd5a8;
-        font-size: 60px;
+        font-size: 16px;
+        margin-bottom: 16px;
       }
 
       .name {
-        font-size: 65px;
-        color: #ffffff;
+        font-size: 58px;
       }
 
       .title {
-        color: #adebd5;
-        font-size: 70px;
+        color: $soft-yellow;
+        font-size: 64px;
       }
       .text {
         margin-top: 30px;
@@ -57,6 +44,123 @@
         font-weight: 500;
         font-size: 17px;
         line-height: 1.5em;
+      }
+
+      .buttons-wrap {
+        margin-top: 20px;
+
+        button {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about {
+    .about-body {
+      .about-me {
+  
+        .name {
+          font-size: 4.07vw;
+        }
+
+        .title {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1284px) {
+  .about {
+    .about-body {
+      .about-me {
+        .greeting-text {
+          font-size: 14px;
+        }
+
+        .text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .about {
+    .about-body {
+      .about-me {
+        .greeting-text {
+          font-size: 12px;
+        }
+
+        .text {
+          margin-bottom: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    .about-body {
+      position: relative;
+
+      .image-section {
+        width: 100%;
+        padding: 0;
+      }
+
+      .about-me {
+        position: absolute;
+        width: 100%;
+        background: #001c2ebf;
+        align-items: center;
+        padding: 12px;
+        bottom: 0px;
+
+        .name {
+          font-size: 28px;
+        }
+        .title {
+          font-size: 32px;
+        }
+
+        .text {
+          font-size: 13px;
+        }
+
+        .buttons-wrap {
+          margin: 20px 0;
+
+          button {
+            padding: 18px;
+            margin: 0 5px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .about {
+    .about-body {
+      .about-me {
+        .name {
+          font-size: 26px;
+        }
+
+        .title {
+          font-size: 30px;
+        }
       }
     }
   }

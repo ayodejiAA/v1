@@ -1,13 +1,11 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
 
 import { ExternalLinkIcon, GithubLinkIcon, DocLinkIcon } from '../../assets/static';
 import './BackendProjects.scss';
 
 
-export const BackendProjects = () => (
-  <div className="backend-projects">
-    <div className="section-wrap">
-
+export const BackendProjects: FunctionComponent = () => (
+  <div className="backend-projects container">
       <div className="section-description">
         <span className="tagline">backend stuff I have built</span>
         <p className="section-name">Backend</p>
@@ -42,6 +40,5 @@ export const BackendProjects = () => (
         <div className="card"></div>
         <div className="card"></div>
       </div>
-    </div>
   </div >
 );

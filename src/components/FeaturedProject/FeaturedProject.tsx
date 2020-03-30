@@ -10,19 +10,25 @@ export const FeaturedProject: FunctionComponent = () => (
         <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
       </div>
       <div className="details">
-        <div className="sidebar" />
 
         <div className="center">
+          <div className="featured-heading">
           <span className="project-type-name">FEATURED PROJECT</span>
-          <h2 className="project-name"> E-Store</h2>
+          </div>
+          <div className="featured-body">
+          <h2 className="project-name">E-Store</h2>
           <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
-          <div className="stack">
+          </div>
+          <div className="featured-footer">
             <div className="svg-border"><CompassIcon className="stack-icon" /></div>
-            <p> React, Javascript, typecript, webpack, firebase, redux, redux-sagas</p>
+            <div className="techs">
+              <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
+            </div>
+            
           </div>
         </div>
 
-        <div className="sidebar right">
+        <div className="sidebar">
           <a href="" title="External" className="link"><ExternalLinkIcon /></a>
           <a href="" title="Github" className="link"><GithubLinkIcon /></a>
         </div>
@@ -34,19 +40,25 @@ export const FeaturedProject: FunctionComponent = () => (
         <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
       </div>
       <div className="details">
-        <div className="sidebar" />
 
         <div className="center">
+          <div className="featured-heading">
           <span className="project-type-name">FEATURED PROJECT</span>
-          <h2 className="project-name"> E-Store</h2>
+          </div>
+          <div className="featured-body">
+          <h2 className="project-name">E-Store</h2>
           <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
-          <div className="stack">
+          </div>
+          <div className="featured-footer">
             <div className="svg-border"><CompassIcon className="stack-icon" /></div>
-            <p> React, Javascript, typecript, webpack, firebase, redux, redux-sagas</p>
+            <div className="techs">
+              <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
+            </div>
+            
           </div>
         </div>
 
-        <div className="sidebar right">
+        <div className="sidebar">
           <a href="" title="External" className="link"><ExternalLinkIcon /></a>
           <a href="" title="Github" className="link"><GithubLinkIcon /></a>
         </div>

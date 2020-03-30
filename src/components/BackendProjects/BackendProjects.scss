@@ -1,117 +1,111 @@
+@import "../../styles/colors";
+
 .backend-projects {
-  padding-top: 100px;
-  
-  .section-wrap {
-    min-height: 90vh;
-    margin: auto;
-    width: 76%;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 
-    .grid-container {
+    .card {
+      height: 350px;
+      flex-basis: 23%;
+      background: #e1d8b7;
+      margin: 15px 10px;
+      position: relative;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-  
-      .card {
-        height: 350px;
-        flex-basis: 23%;
-        background: #6adab3;
-        margin: 15px 10px;
-        position: relative;
-        display: flex;
-        justify-content: center;
+      justify-content: center;
 
-        &:hover {
-          .background-image {
-            filter: none;
-            mix-blend-mode: normal;
-          }
-         
-        }
-  
+      &:hover {
         .background-image {
-          width: 100%;
-          mix-blend-mode: multiply;
-          filter: grayscale(100%) contrast(1)
+          filter: none;
+          mix-blend-mode: normal;
         }
-        .content {
-          height: 200px;
-          background: white;
-          width: 85%;
-          position: absolute;
-          bottom: 10px;
-          padding: 15px 10px;
-  
-          .heading {
-            height: 50%;
-  
-            .desc-container {
-    
-              .desc {
-                line-height: 20px;
-                font-size: 8px;
-                font-weight:500;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                margin: 0 1px;
-              }
-            }
-  
-            .project-title {
-              font-size: 24px;
-              color: #2e483f;
-              font-weight: 600;
+      }
+
+      .background-image {
+        width: 100%;
+        mix-blend-mode: multiply;
+        filter: grayscale(100%) contrast(1);
+      }
+      .content {
+        height: 200px;
+        background: white;
+        color: $darkest-blue;
+        width: 85%;
+        position: absolute;
+        bottom: 10px;
+        padding: 15px 10px;
+
+        .heading {
+          height: 50%;
+
+          .desc-container {
+            .desc {
+              line-height: 20px;
+              font-size: 8px;
+              font-weight: 500;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              margin: 0 1px;
             }
           }
-  
-          .details {
-            height: 50%;
-            width: 100%;
+
+          .project-title {
+            font-size: 24px;
+          }
+        }
+
+        .details {
+          height: 50%;
+          width: 100%;
+          display: flex;
+
+          .techs {
+            width: 70%;
             display: flex;
-  
-            .techs {
-              width: 70%;
-              display: flex;
-              flex-direction: column;
-  
-              span {
-                font-size: 13px;
-                letter-spacing: 0.05em;
-                color: #909090;
-  
-                &::before {
-                  content: " - ";
-                }
+            flex-direction: column;
+            padding-top: 5px;
+
+            span {
+              font-size: 13px;
+              letter-spacing: 0.05em;
+
+              &::before {
+                content: " - ";
               }
             }
-            .links {
-              width: 30%;
-              border-left: 1px solid #d4d4d4a1;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-  
-              .link {
-                width: 33px;
-                height: 33px;
-                padding: 8px;
-                margin: 0 2px;
-                fill: #484a58;
-  
-                &:hover {
-                  fill: #39bb8d;
-                }
+          }
+          .links {
+            width: 30%;
+            border-left: 1px solid #d4d4d4a1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .link {
+              width: 33px;
+              height: 33px;
+              padding: 8px;
+              margin: 0 2px;
+              fill: #484a58;
+
+              &:hover {
+                fill:inherit;
               }
             }
           }
         }
       }
     }
+
+    &::after {
+      content: "";
+      flex: auto;
+    }
   }
-
 }
 
-.grid-container::after {
-  content: "";
-  flex: auto;
-}
+// .grid-container::after {
+//   content: "";
+//   flex: auto;
+// }

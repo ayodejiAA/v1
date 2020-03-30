@@ -1,0 +1,26 @@
+@import "../../../styles/colors";
+$button-border: 1px solid $soft-yellow;
+
+.button_component-style {
+  padding: 20px;
+  font-size: 12px;
+  font-family : inherit;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+
+
+  &.fill {
+    background: $soft-yellow;
+    border: $button-border;
+    color: #001624;
+  }
+
+  &.border {
+    background: transparent;
+    border: $button-border;
+    color: #d4d4d4;
+  }
+}

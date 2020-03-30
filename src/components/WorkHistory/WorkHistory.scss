@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .work {
   width: 80%;
   margin: 0 auto;
@@ -8,34 +10,27 @@
 
     li {
       list-style: none;
-      padding: 15px;
-      font-weight: 500;
-      border-left: 2px #a3b1b1 solid;
+      padding: 16px;
+      border-left: 2px hsla(203, 0%, 83%, 0.63) solid;
       cursor: pointer;
 
       &[aria-selected="true"] {
-        background: #6adab3;
-        border-left: 2px #000000 solid;
-
-        &:hover {
-          background: #6adab3;
-          cursor: default;
-        }
-      }
-
-      &:hover {
-        background: #adebd5;
-        border-left: 2px #000000 solid;
+        background: hsla(203, 118%, 7%, 1);
+        border-left: 2px $soft-yellow solid;
       }
     }
   }
 
   .tab-content {
-    margin: 10px 20px;
+    margin: 15px 5px 0 20px;
     width: 81%;
 
     .title {
       margin-bottom: 9px;
+
+      .company-name {
+        color: hsla(46, 63%, 75%, 1);
+      }
     }
 
     .date {
@@ -49,11 +44,11 @@
       font-size: 15px;
       font-weight: 500;
       position: relative;
-      line-height: 1.70em;
+      line-height: 1.7em;
 
       &::before {
         content: "\27A4";
-        color: #39bb8d;
+        color: #e7d597;
         position: absolute;
         left: 0;
       }
@@ -62,9 +57,38 @@
         margin-top: 27px;
       }
     }
+  }
+}
 
-    .green {
-      color: #39bb8d;
+@media screen and (max-width: 1024px) {
+  .work {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .tab-list {
+      display: flex;
+      margin-bottom: 20px;
+
+      li {
+        border:none;
+        padding: 12px;
+      }
+    }
+
+    .tab-content {
+      margin-left: 5px;
+      width: 100%;
+
+      p {
+        font-size: 13px;
+      }
     }
   }
 }

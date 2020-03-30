@@ -1,20 +1,25 @@
 import React, { FunctionComponent } from 'react';
+import { Button } from '../common/Button/Button';
 
 import "./About.scss";
 
 export const About: FunctionComponent = () => (
   <div className="about">
-    <div className="about-background" />
     <div className="about-body">
       <div className="image-section">
         <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
       </div>
       <div className="about-me">
-        <h1 className="greeting-text">{"< hello world"}<span className="text-pointer">_</span>{" />"}</h1>
+        <h1 className="greeting-text">Hi there, I am ... </h1>
         <h3 className="name">Ayodeji Afolabi.</h3>
-        <h2 className="title">Full Stack Developer.</h2>
+        <h2 className="title">Software Engineer.</h2>
         <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit impedit alias numquam, quam error voluptatibus pariatur nulla, corrupti qui, magnam assumenda vero maiores quibusdam. Officia itaque corrupti obcaecati perspiciatis!</p>
-        {/* <div className="description"> </div> */}
+
+        <div className="buttons-wrap">
+        <a href="/mail" ><Button fill={false}>Send me mail</Button></a>
+        <a href="/download" ><Button fill={true}>Download Resume</Button></a>
+        </div>
+
       </div>
     </div>
   </div>
