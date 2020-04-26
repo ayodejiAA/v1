@@ -1,12 +1,11 @@
 import React from "react";
 
-import { About } from "../About/About";
 import { SnowManHeadIcon } from "../../assets/static";
 import "./Header.scss";
 
 export const Header = () => (
-  <div className="header container">
-    <div className="nav">
+  <header className="header">
+    <nav className="nav">
       <ul>
         <li>ABOUT</li>
         <li>SERVICES</li>
@@ -16,7 +15,6 @@ export const Header = () => (
         <li>CONTACT</li>
         <li>PORTFOLIO</li>
       </ul>
-    </div>
-    <About />
-  </div>
+    </nav>
+  </header>
 );

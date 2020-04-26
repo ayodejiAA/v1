@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
 import { WorkHistory, DataProps } from "../WorkHistory/WorkHistory";
-import './Experience.scss';
 
 export const Experience: FunctionComponent<DataProps> = ({ data }) => (
   <div className="experience container">

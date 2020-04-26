@@ -4,7 +4,7 @@ import { Button } from '../common/Button/Button';
 import "./About.scss";
 
 export const About: FunctionComponent = () => (
-  <div className="about">
+  <div className="about container">
     <div className="about-body">
       <div className="image-section">
         <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
