@@ -1,13 +1,15 @@
 import React, { FunctionComponent } from 'react';
 
 import { CompassIcon, GithubLinkIcon, ExternalLinkIcon } from '../../assets/static/';
+import portrait from '../../assets/images/portrait.png'
+
 import './FeaturedProject.scss';
 
 export const FeaturedProject: FunctionComponent = () => (
   <>
     <div className="featured-project">
       <div className="image-section">
-        <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
+        <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
       </div>
       <div className="details">
 
@@ -37,7 +39,7 @@ export const FeaturedProject: FunctionComponent = () => (
 
     <div className="featured-project switch">
       <div className="image-section">
-        <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
+        <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
       </div>
       <div className="details">
 

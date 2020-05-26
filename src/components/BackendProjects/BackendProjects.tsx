@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react';
 
 import { ExternalLinkIcon, GithubLinkIcon, DocLinkIcon } from '../../assets/static';
+import portrait from '../../assets/images/portrait.png'
 import './BackendProjects.scss';
 
 
@@ -13,7 +14,7 @@ export const BackendProjects: FunctionComponent = () => (
 
       <div className="grid-container">
         <div className="card">
-          <div className="background-image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
+          <div className="background-image" style={{ backgroundImage: `url(${portrait})` }} />
           <div className="content">
             <div className="heading">
               <div className="desc-container">

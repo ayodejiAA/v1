@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Button } from '../common/Button/Button';
+import portrait from '../../assets/images/portrait.png'
 
 import "./About.scss";
 
@@ -7,7 +8,7 @@ export const About: FunctionComponent = () => (
   <div className="about container">
     <div className="about-body">
       <div className="image-section">
-        <div className="image" style={{ backgroundImage: `url(../../assets/images/portrait.png)` }} />
+        <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
       </div>
       <div className="about-me">
         <h1 className="greeting-text">Hi there, I am ... </h1>
