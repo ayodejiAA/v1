@@ -92,3 +92,14 @@
     }
   }
 }
+
+
+@media screen and (max-width: 395px) {
+  .work {
+    .tab-content {
+      .title {
+        font-size: 18px;
+      }
+    }
+  }
+}

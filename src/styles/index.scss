@@ -9,7 +9,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  padding-top: 20px;
   background: $darkest-blue;
   color: hsla(203, 36%, 82%, 1);
   fill: $soft-yellow;
@@ -17,6 +16,10 @@ body {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &.freeze {
+    overflow: hidden;
+  }
 }
 
 a {

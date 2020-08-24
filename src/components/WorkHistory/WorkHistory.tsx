@@ -22,7 +22,7 @@ export const WorkHistory: FunctionComponent<DataProps> = ({ data }) => {
   const [selected, setSelected] = useState<boolean>(false);
   const [tabIndex, setTabIndex] = useState<number>(0);
 
-  const onTabClick = (tabId: number) => {
+  const handleTabClick = (tabId: number) => {
     setTabIndex(tabId);
     setSelected(!selected);
   };
@@ -36,7 +36,7 @@ export const WorkHistory: FunctionComponent<DataProps> = ({ data }) => {
           <li
             key={index}
             aria-selected={index === tabIndex}
-            onClick={() => onTabClick(index)}
+            onClick={() => handleTabClick(index)}
           >
             {name}
           </li>

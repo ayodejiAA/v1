@@ -1,0 +1,124 @@
+@media screen and (max-width: 600px) {
+  $menu-speed: 0.75s;
+  $overlay-color: rgba(24, 39, 51, 0.85);
+
+  .hamburger {
+    width: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+
+  .toggler {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 60px;
+    opacity: 0;
+
+    &:checked {
+      + .hamburger {
+        > div::before,
+        > div::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+        > div {
+          transform: rotate(135deg);
+        }
+      }
+
+      &:hover + .hamburger > div {
+        transform: rotate(225deg);
+      }
+
+      ~ .overlay-nav-container {
+        visibility: visible;
+        z-index: -1;
+
+        > div {
+          transform: scale(1);
+          transition-duration: $menu-speed;
+
+          > div {
+            opacity: 1;
+            transition: opacity 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    > div {
+      background-color: $overlay-color;
+      border-radius: 50%;
+      width: 200vw;
+      height: 200vw;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease;
+
+      > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        
+        li {
+          list-style: none !important;
+
+          font-size: 1.5rem !important;
+          padding: 1rem !important;
+
+          > a {
+            color: #fff !important;
+            text-decoration: none !important;
+            transition: color 0.4s ease !important;
+          }
+        }
+      }
+    }
+  }
+}
