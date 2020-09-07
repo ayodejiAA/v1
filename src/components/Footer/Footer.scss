@@ -10,7 +10,7 @@
 
     &.light-bar {
       width: 200%;
-      background: #00253d;
+      background: $darkest-blue;
     }
 
     .custom {
@@ -23,24 +23,6 @@
       margin: 20px 0 40px 0;
     }
 
-    .mail-me-button {
-      padding: 24px 28px;
-      background: white;
-      font-size: 10px;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .download-cv-button {
-      padding: 24px 28px;
-      background: #007c4f;
-      font-size: 10px;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
     .buttons-wrap {
       button {
         margin: 0 5px;
@@ -49,7 +31,7 @@
   }
 
   .footer-container {
-    background: $blue;
+    background: $outerSpaceColor;
     height: 320px;
     display: flex;
     flex-direction: column;
@@ -117,7 +99,6 @@
   .footer {
     .top-bar {
       .middle {
-
         .section-description {
           font-size: 12px;
 

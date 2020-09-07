@@ -1,5 +1,5 @@
 @import "../../styles/colors";
-$sidebar-border: 1px solid #484a58;
+$sidebar-border: 1px solid $outerSpaceColor;
 
 .featured-project {
   height: 500px;
@@ -42,7 +42,7 @@ $sidebar-border: 1px solid #484a58;
         .project-type-name {
           font-size: 12px;
           font-weight: 600;
-          color: #e7d597;
+          color: $primaryColor;
           letter-spacing: 1px;
         }
       }

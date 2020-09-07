@@ -9,7 +9,7 @@ import "./Footer.scss";
 import { Button } from "../common/Button/Button";
 
 export const Footer = () => (
-  <div className="footer">
+  <div id="contact" className="footer">
     <div className="top-bar">
       <div className="stripes" />
       <div className="middle light-bar">

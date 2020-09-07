@@ -1,5 +1,5 @@
 @import "../../../styles/colors";
-$button-border: 1px solid $soft-yellow;
+$button-border: 1px solid $primaryColor;
 
 .button_component-style {
   padding: 20px;
@@ -13,7 +13,7 @@ $button-border: 1px solid $soft-yellow;
 
 
   &.fill {
-    background: $soft-yellow;
+    background: $primaryColor;
     border: $button-border;
     color: #001624;
   }

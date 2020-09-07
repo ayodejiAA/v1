@@ -5,7 +5,7 @@
   width: 100%;
 
   .nav {
-    border-bottom: 0.1px solid #807d75;
+    border-bottom: 0.1px solid $outerSpaceColor;
     height: 75px;
     display: flex;
     justify-content: center;
@@ -14,7 +14,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row-reverse;
 
       ul {
         display: inline-flex;
@@ -24,6 +23,14 @@
           margin: 0px 30px;
           font-size: 13px;
           font-weight: 500;
+
+          a {
+            color: inherit;
+
+            &:hover {
+              color: $primaryColor;
+            }
+          }
         }
       }
 
@@ -60,38 +67,5 @@
         }
       }
     }
-
-    // .side-nav-container.reveal {
-    //   display: flex;
-    //   position: fixed;
-    //   justify-content: center;
-    //   align-items: center;
-    //   top: 0;
-    //   left: 0;
-    //   bottom:0;
-    //   z-index: 1;
-    //   height: 100%;
-    //   width: 100vw;
-
-    //   .side-nav {
-    //     background-color: $blue;
-    //     padding: 120px 50px;
-    //     width: 60vw;
-    //     height: 100%;
-    //     margin-right: auto;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     ul {
-    //       list-style: none;
-    //       color: #c1d5e2;
-
-    //       & > li + li {
-    //         margin-top: 20px;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }

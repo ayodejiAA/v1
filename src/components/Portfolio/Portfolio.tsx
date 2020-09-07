@@ -7,7 +7,7 @@ import { BackendProjects } from '../BackendProjects/BackendProjects';
 import "./Portfolio.scss";
 
 export const Portfolio: FunctionComponent = () => (
-  <div className="portfolio">
+  <div id="projects" className="portfolio">
     <div className="frontend-projects">
 
       <div className="top-bar">

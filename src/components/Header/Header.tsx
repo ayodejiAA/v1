@@ -10,13 +10,13 @@ export const Header: FC = () => (
     <nav className="nav">
       <div className="menu__list">
         <ul>
-          <li>ABOUT</li>
-          <li>SERVICES</li>
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#skills">Skills</a></li>
         </ul>
         <SnowManHeadIcon className="logo" />
         <ul>
-          <li>CONTACT</li>
-          <li>PORTFOLIO</li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
         <div className="hamburger__menu">
           <Hamburger />

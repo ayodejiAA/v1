@@ -5,7 +5,7 @@ import { ToolsIcon, RecycleIcon, OthersIcon, JavaScriptIcon, Nodejs } from '../.
 import './Skills.scss';
 
 export const SkillsSection: FunctionComponent = () => (
-  <div className="skills container">
+  <div id="skills" className="skills container">
     <div className="section-description">
       <span className="tagline">Technologies I have worked with</span>
       <p className="section-name">Skills</p>

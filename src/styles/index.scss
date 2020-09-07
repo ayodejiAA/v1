@@ -11,7 +11,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background: $darkest-blue;
   color: hsla(203, 36%, 82%, 1);
-  fill: $soft-yellow;
+  fill: $primaryColor;
   line-height: 1.3;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
@@ -24,11 +24,10 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .section-description {
-  color: $soft-yellow;
+  color: $primaryColor;
 
   .tagline {
     font-size: 10px;
@@ -67,14 +66,14 @@ a {
       45deg,
       $darkest-blue,
       $darkest-blue 5px,
-      $blue 5px,
-      $blue 10px
+      $outerSpaceColor 5px,
+      $outerSpaceColor 10px
     );
   }
 
   .light-bar {
     width: 45%;
-    background: $blue;
+    background: $outerSpaceColor;
     box-shadow: 0px 5px 4px 0px $darkest-blue;
   }
 }
