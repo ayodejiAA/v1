@@ -1,4 +1,4 @@
-@import 'colors';
+@import "colors";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 
 * {
@@ -16,10 +16,6 @@ body {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  &.freeze {
-    overflow: hidden;
-  }
 }
 
 a {
@@ -78,21 +74,17 @@ a {
   }
 }
 
-
-
-@media screen and (max-width:926px) {
+@media screen and (max-width: 926px) {
   .container {
-    width: 90%
+    width: 90%;
   }
 }
 
-
-
-@media screen and (max-width:500px) {
- .section-description {
-   .section-name {
-     font-size: 26px;
-     margin-top: 5px;
-   }
- }
+@media screen and (max-width: 500px) {
+  .section-description {
+    .section-name {
+      font-size: 26px;
+      margin-top: 5px;
+    }
+  }
 }

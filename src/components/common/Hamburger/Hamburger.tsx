@@ -1,21 +1,32 @@
 import React, { FC } from 'react'
+import { TOGGLER } from '../../../constants'
 
 import "./Hamburger.scss"
 
-export const Hamburger: FC = () => (
-  <>
-    <input type="checkbox" className="toggler" />
-    <div className="hamburger"><div></div></div>
-    <div className="overlay-nav-container">
-      <div>
+export const Hamburger: FC = () => {
+
+
+  const handleOnclick = () => {
+    const toggler: HTMLInputElement = document.querySelector(TOGGLER);
+    toggler.checked = false
+  }
+
+  return (
+    <>
+      <input type="checkbox" className="toggler" />
+      <div className="hamburger"><div></div></div>
+      <div className="overlay-nav-container" onClick={handleOnclick}>
         <div>
-          <ol className="ol">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ol>
+          <div>
+            <ol className="ol">
+              <li><a href="/#work">Work</a></li>
+              <li><a href="/#skills">Skills</a></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li><a href="/#contact">Contact</a></li>
+            </ol>
+          </div>
         </div>
       </div>
-    </div>
-  </>
-)
+    </>
+  )
+}
