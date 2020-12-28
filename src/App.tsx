@@ -8,7 +8,6 @@ import { Portfolio } from './components/Portfolio/Portfolio';
 import { Footer } from './components/Footer/Footer';
 
 import { TOGGLER } from './constants';
-import data from './data';
 
 const App: FC = () => {
   const handleResize = (toggler: HTMLInputElement) => {
@@ -22,7 +21,6 @@ const App: FC = () => {
       const id = location.hash.substring(1);
       const el = document.getElementById(id);
       if (el) {
-        el.style.visibility = "hidden";
         el.scrollIntoView();
         el.focus();
       }

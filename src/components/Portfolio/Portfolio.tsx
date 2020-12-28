@@ -15,7 +15,7 @@ export const Portfolio: FC = () => {
   }, []);
 
   return (
-    <div className="portfolio" id="projects" ref={revealSection}>
+    <div className="portfolio" id="projects" >
       <div className="frontend-projects">
 
         <div className="top-bar">
@@ -28,7 +28,7 @@ export const Portfolio: FC = () => {
             <span className="tagline">Some projects I have worked on</span>
             <p className="section-name">Portfolio</p>
           </div>
-          <div className="featured-projects" >
+          <div className="featured-projects load-hidden" ref={revealSection}>
             <FeaturedProject />
           </div>
           <NotableProjects />

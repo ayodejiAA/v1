@@ -11,14 +11,24 @@ export const About: FunctionComponent = () => (
         <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
       </div>
       <div className="about-me">
-        <h1 className="greeting-text">Hi there, I am ... </h1>
-        <h3 className="name">Ayodeji Afolabi.</h3>
-        <h2 className="title">Software Engineer.</h2>
-        <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit impedit alias numquam, quam error voluptatibus pariatur nulla, corrupti qui, magnam assumenda vero maiores quibusdam. Officia itaque corrupti obcaecati perspiciatis!</p>
+        <h1 className="greeting-text">Hi there, my name is <span className="ellipsis">...</span></h1>
+        <h1 className="name">Ayodeji Afolabi.</h1>
+        <h1 className="title">Software Engineer.</h1>
+        <div className="text">
+          <p>
+            I am a software engineer based in Lagos, Nigeria. I enjoy designing and building
+            scalable and meaningful things that live on the internet, whether that be front-facing or backend applications.
+          </p>
+          <br />
+          <p>
+            I have a diverse set of skills, ranging from web design tools like HTML + CSS  + Javascript,
+            to Python, PHP, all the way to web development frameworks and Linux server administration.
+          </p>
+        </div>
 
         <div className="buttons-wrap">
-        <a href="/mail" ><Button fill={false}>Send me mail</Button></a>
-        <a href="/download" ><Button fill={true}>Download Resume</Button></a>
+          <a href="/mail" ><Button fill={false}>Send me mail</Button></a>
+          <a href="/download" ><Button fill={true}>Download Resume</Button></a>
         </div>
 
       </div>

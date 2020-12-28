@@ -7,31 +7,7 @@
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: repeat(3, 120px);
     gap: 3px;
-
-    div {
-      border: 1px solid hsla(46, 63%, 90%, 1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #e2fbf24d;
-
-      .icon {
-        width: 70%;
-        height: 70%;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        transition: 0.3s ease-in-out;
-      }
-
-      &:hover {
-        .icon {
-          width: 80%;
-          height: 80%;
-          -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-        }
-      }
-    }
+    transition: 0.4s ease-in-out;
   }
 
   .tools-section {
@@ -43,15 +19,11 @@
     .skills-wrap {
       padding-top: 5px;
 
-      &:nth-child(4) {
-        background-color: #39bb8d;
-      }
-
-      p {
+      > p {
         padding-left: 40px;
         position: relative;
         margin-bottom: 10px;
-        font-size: 15px;
+        font-size: 14px;
 
         &::before {
           content: "\2611";
@@ -71,7 +43,7 @@
 
       .skills-heading {
         margin-bottom: 12px;
-        font-size: 22px;
+        font-size: 16px;
         display: flex;
         align-items: center;
         letter-spacing: 2px;
@@ -107,9 +79,9 @@
     .tools-section {
       padding-left: 0;
       .skills-wrap {
-        p {
+        > p {
           &::before {
-            left: 3px
+            left: 3px;
           }
         }
       }
@@ -128,14 +100,13 @@
 
 @media screen and (max-width: 750px) {
   .skills-section {
-  
     flex-direction: column;
 
     .grid-container {
       width: 100%;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-template-rows: none;
-      grid-auto-rows: 100px
+      grid-auto-rows: 100px;
     }
 
     .tools-section {
@@ -143,7 +114,7 @@
       width: 100%;
 
       .skills-wrap {
-        p {
+        > p {
           font-size: 13px;
           padding-left: 32px;
         }

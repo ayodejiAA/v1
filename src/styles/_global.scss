@@ -1,0 +1,14 @@
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+.container {
+  margin: auto;
+  min-height: 100vh;
+  width: 80%;
+  max-width: 1058px;
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,27 @@
+.skill-grid-icon {
+  border: 1px solid hsla(46, 63%, 90%, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    fill: #ffffff;
+    padding: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .icon {
+      width: 45%;
+      height: 45%;
+    }
+  }
+
+  > span {
+    margin-top: 9px;
+    font-size: 12px;
+  }
+}

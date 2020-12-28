@@ -23,8 +23,12 @@
       flex-direction: column;
 
       .greeting-text {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 16px;
+      }
+
+      .ellipsis {
+        padding-left: 8px;
       }
 
       .name {
@@ -38,9 +42,7 @@
       .text {
         margin-top: 30px;
         max-width: 34em;
-        color: #fcffff;
-        font-weight: 500;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 1.5em;
       }
 
@@ -59,7 +61,6 @@
   .about {
     .about-body {
       .about-me {
-  
         .name {
           font-size: 4.07vw;
         }
@@ -161,16 +162,15 @@
         .title {
           font-size: 30px;
         }
-        
+
         .text {
-          margin-top: 18px
+          margin-top: 18px;
         }
 
-        .buttons-wrap {  
+        .buttons-wrap {
           display: flex;
           justify-content: center;
         }
-
       }
     }
   }
@@ -184,13 +184,12 @@
           font-size: 24px;
         }
 
-        .buttons-wrap {  
+        .buttons-wrap {
           button {
             padding: 18px;
             font-size: 8px;
           }
         }
-
       }
     }
   }

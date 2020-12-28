@@ -1,6 +1,7 @@
 import React, { useState, FC } from "react";
 
-import data from "../../data";
+import { experience as data } from '../../data/'
+
 import "./WorkHistory.scss";
 
 export interface Duration {
@@ -27,9 +28,7 @@ export const WorkHistory: FC = () => {
             key={index}
             aria-selected={index === tabIndex}
             onClick={() => handleTabClick(index)}
-          >
-            {name}
-          </li>
+          >{name}</li>
         ))}
       </ul>
       <div className="tab-content">

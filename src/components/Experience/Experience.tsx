@@ -13,7 +13,7 @@ export const Experience: FC = () => {
   }, []);
 
   return (
-    <div id="work" className="experience container" ref={revealSection}>
+    <div id="work" className="experience container load-hidden" ref={revealSection}>
       <div className="section-description">
         <span className="tagline">where I have worked</span>
         <p className="section-name">Experience</p>
