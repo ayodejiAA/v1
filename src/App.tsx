@@ -18,6 +18,18 @@ const App: FC = () => {
   }
 
   useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.visibility = "hidden";
+        el.scrollIntoView();
+        el.focus();
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     const toggler: HTMLInputElement = document.querySelector(TOGGLER)
     window.addEventListener('resize', () => handleResize(toggler));
     return () => window.removeEventListener('resize', () => handleResize(toggler))
@@ -26,11 +38,13 @@ const App: FC = () => {
   return (
     <>
       <Header />
-      <About />
-      <Experience data={data} />
-      <SkillsSection />
-      <Portfolio />
-      <Footer />
+      <main>
+        <About />
+        <Experience />
+        <SkillsSection />
+        <Portfolio />
+        <Footer />
+      </main>
     </>
   )
 };

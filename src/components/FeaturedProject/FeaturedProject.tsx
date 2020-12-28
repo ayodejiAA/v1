@@ -15,18 +15,18 @@ export const FeaturedProject: FunctionComponent = () => (
 
         <div className="center">
           <div className="featured-heading">
-          <span className="project-type-name">FEATURED PROJECT</span>
+            <span className="project-type-name">FEATURED PROJECT</span>
           </div>
           <div className="featured-body">
-          <h2 className="project-name">E-Store</h2>
-          <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
+            <h2 className="project-name">E-Store</h2>
+            <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
           </div>
           <div className="featured-footer">
             <div className="svg-border"><CompassIcon className="stack-icon" /></div>
             <div className="techs">
               <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
             </div>
-            
+
           </div>
         </div>
 
@@ -45,18 +45,18 @@ export const FeaturedProject: FunctionComponent = () => (
 
         <div className="center">
           <div className="featured-heading">
-          <span className="project-type-name">FEATURED PROJECT</span>
+            <span className="project-type-name">FEATURED PROJECT</span>
           </div>
           <div className="featured-body">
-          <h2 className="project-name">E-Store</h2>
-          <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
+            <h2 className="project-name">E-Store</h2>
+            <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
           </div>
           <div className="featured-footer">
             <div className="svg-border"><CompassIcon className="stack-icon" /></div>
             <div className="techs">
               <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
             </div>
-            
+
           </div>
         </div>
 

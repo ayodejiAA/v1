@@ -1,5 +1,6 @@
-import React, { useState, FunctionComponent } from "react";
+import React, { useState, FC } from "react";
 
+import data from "../../data";
 import "./WorkHistory.scss";
 
 export interface Duration {
@@ -7,18 +8,7 @@ export interface Duration {
   end: string;
 }
 
-export interface Details {
-  name: string;
-  title: string;
-  duration: Duration;
-  details: Array<string>;
-}
-
-export interface DataProps {
-  data: Array<Details>;
-}
-
-export const WorkHistory: FunctionComponent<DataProps> = ({ data }) => {
+export const WorkHistory: FC = () => {
   const [selected, setSelected] = useState<boolean>(false);
   const [tabIndex, setTabIndex] = useState<number>(0);
 
@@ -47,7 +37,7 @@ export const WorkHistory: FunctionComponent<DataProps> = ({ data }) => {
           {title}
           <span className="company-name">{` @${name}`}</span>
         </h3>
-        <span className="date">{`${duration.start } - ${ duration.end}`}</span>
+        <span className="date">{`${duration.start} - ${duration.end}`}</span>
         {details.map((detail, index) => (
           <p key={index}>{detail}</p>
         ))}
