@@ -1,6 +1,7 @@
 import React, { FC, useRef, useEffect } from 'react';
 
 import {
+  CheckIcon,
   ToolsIcon,
   RecycleIcon,
   OthersIcon,
@@ -55,7 +56,9 @@ export const SkillsSection: FC = () => {
             TOOLS
             </h3>
             {
-              data.tools.map((item, index) => (<p key={index}>{item}</p>))
+              data.tools.map((item, index) => (
+                <p key={index}><span><CheckIcon /></span>{item}</p>
+              ))
             }
           </div>
           <div className="skills-wrap">
@@ -63,7 +66,9 @@ export const SkillsSection: FC = () => {
             TESTING
             </h3>
             {
-              data.testing.map((item, index) => (<p key={index}>{item}</p>))
+              data.testing.map((item, index) => (
+                <p key={index}><span><CheckIcon /></span>{item}</p>
+              ))
             }
           </div>
           <div className="skills-wrap">
@@ -71,12 +76,16 @@ export const SkillsSection: FC = () => {
             OTHERS
             </h3>
             {
-              data.others.map((item, index) => (<p key={index}>{item}</p>))
+              data.others.map((item, index) => (
+                <p key={index}><span><CheckIcon /></span>{item}</p>
+              ))
             }
           </div>
           <div className="skills-wrap">
             {
-              data.others2.map((item, index) => (<p key={index}>{item}</p>))
+              data.others2.map((item, index) => (
+                <p key={index}><span><CheckIcon /></span>{item}</p>
+              ))
             }
           </div>
         </div>

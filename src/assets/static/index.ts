@@ -12,3 +12,4 @@ export { default as RecycleIcon } from "./icons/others/recycle.svg";
 export { default as SnowManHeadIcon } from './icons/others/snowman-head.svg'
 export { default as ToolsIcon } from "./icons/others/tools.svg";
 export { default as TwitterIcon } from './icons/others/twitter.svg';
+export { default as CheckIcon } from './icons/others/check.svg';

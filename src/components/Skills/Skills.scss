@@ -25,13 +25,12 @@
         margin-bottom: 10px;
         font-size: 14px;
 
-        &::before {
-          content: "\2611";
-          color: hsl(46, 77%, 89%);
-          font-size: 20px;
+        > span > svg {
+          fill: hsl(46, 77%, 89%);
+          width: 16px;
+          height: 16px;
           position: absolute;
           left: 7px;
-          top: -6px;
         }
       }
 

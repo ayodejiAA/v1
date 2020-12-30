@@ -12,3 +12,9 @@ html.sr .load-hidden {
   flex-direction: column;
   justify-content: center;
 }
+
+@media screen and (max-width: 926px) {
+  .container {
+    width: 90%;
+  }
+}
