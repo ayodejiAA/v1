@@ -17,7 +17,8 @@ const scrollReveal = (ref: React.MutableRefObject<any>) => {
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
   }
 
-  ScrollReveal().reveal(ref.current, config);
+  const sr = ScrollReveal()
+  sr.reveal(ref.current, config);
 }
 
 export default scrollReveal;

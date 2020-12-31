@@ -19,11 +19,13 @@ const App: FC = () => {
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.substring(1);
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView();
-        el.focus();
-      }
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView();
+          el.focus();
+        }
+      }, 100)
     }
   }, []);
 
