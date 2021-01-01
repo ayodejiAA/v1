@@ -1,6 +1,6 @@
 export default {
   tools: [
-    "Github/Gitlab/Pivotal Tracker",
+    "Github / Gitlab / Pivotal Tracker",
     "Chrome DevTools",
     "Linux",
     "CI/CD"

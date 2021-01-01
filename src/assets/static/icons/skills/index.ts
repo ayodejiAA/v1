@@ -9,3 +9,4 @@ export { default as HtmlIcon } from "./html5.svg";
 export { default as CssIcon } from "./css3.svg";
 export { default as PhpIcon } from "./php.svg";
 export { default as NestjsIcon } from "./nestjs.svg";
+export { default as NextjsIcon } from "./nextjs.svg";

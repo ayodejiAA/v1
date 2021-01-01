@@ -15,7 +15,8 @@ import {
   HtmlIcon,
   CssIcon,
   PhpIcon,
-  NestjsIcon
+  NestjsIcon,
+  NextjsIcon
 } from '../../assets/static/';
 import SkillGridIcon from '../common/SkillGridIcon/SkillGridIcon';
 import scrollReveal from '../../utils';
@@ -49,6 +50,7 @@ export const SkillsSection: FC = () => {
           <SkillGridIcon name="CSS3" SVGIcon={CssIcon} bgColor="#1572B6" />
           <SkillGridIcon name="Django" SVGIcon={DjangoIcon} bgColor="#092E20" />
           <SkillGridIcon name="Apollo GraphQL" SVGIcon={ApolloGraphqlIcon} bgColor="#311C87" />
+          <SkillGridIcon name="Next.js" SVGIcon={NextjsIcon} bgColor="#000000" />
         </div>
         <div className="tools-section">
           <div className="skills-wrap">
