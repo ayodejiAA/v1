@@ -27,7 +27,7 @@ export const BackendProject: FC<IBackendProject> = ({ name, technologies, github
       <div className="details">
         <div className="techs">
           {
-            technologies.map(tech => <span>{tech}</span>)
+            technologies.map((tech, idx) => <span key={idx}>{tech}</span>)
           }
         </div>
         <div className="links">

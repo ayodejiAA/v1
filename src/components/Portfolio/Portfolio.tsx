@@ -8,7 +8,6 @@ import scrollReveal from '../../utils';
 import { projects } from "../../data";
 import "./Portfolio.scss";
 
-
 export const Portfolio: FC = () => {
   const revealSection = useRef(null);
 
@@ -34,14 +33,14 @@ export const Portfolio: FC = () => {
           </div>
           <div className="featured-projects load-hidden" ref={revealSection}>
             {
-              featured.map((project, idx) => <FeaturedProject {...project} reverse={Boolean(idx % 2)} />)
+              featured.map((project, idx) => <FeaturedProject key={idx} {...project} reverse={Boolean(idx % 2)} />)
             }
           </div>
           <div className="notable-projects">
             <p className="section-name">Notable Projects</p>
             <div className="grid">
               {
-                notable.map((project) => <NotableProject {...project} />)
+                notable.map((project, idx) => <NotableProject key={idx}  {...project} />)
               }
             </div>
           </div>
@@ -55,9 +54,8 @@ export const Portfolio: FC = () => {
         </div>
         <div className="grid-container">
           {
-            backend.map(project => <BackendProject {...project} />)
+            backend.map((project, idx) => <BackendProject key={idx}  {...project} />)
           }
-
         </div>
       </div >
     </div>
