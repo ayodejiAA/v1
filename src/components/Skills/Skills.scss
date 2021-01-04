@@ -77,11 +77,16 @@
 
     .tools-section {
       padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .skills-section {
+    .tools-section {
       .skills-wrap {
-        > p {
-          &::before {
-            left: 3px;
-          }
+        > p > span > svg {
+          left: 4px;
         }
       }
     }
@@ -115,11 +120,39 @@
       .skills-wrap {
         padding-top: 30px;
         > p {
-          font-size: 13px;
-          padding-left: 32px;
+          padding-left: 47px;
+          > span > svg {
+            left: 10px;
+          }
         }
-        .skills-heading {
-          font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills-section {
+    .tools-section {
+      .skills-wrap {
+        > p {
+          > span > svg {
+            left: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills-section {
+    .tools-section {
+      .skills-wrap {
+        > p {
+          padding-left: 34px;
+          > span > svg {
+            left: 3px;
+          }
         }
       }
     }
