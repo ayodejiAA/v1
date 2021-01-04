@@ -1,14 +1,18 @@
 import React, { FC, useRef, useEffect } from 'react';
 
 import { FeaturedProject } from '../FeaturedProject/FeaturedProject';
-import { NotableProjects } from '../NotableProjects/NotableProjects';
-import { BackendProjects } from '../BackendProjects/BackendProjects';
+import { NotableProject } from '../NotableProjects/NotableProject';
+import { BackendProject } from '../BackendProjects/BackendProject';
 
-import "./Portfolio.scss";
 import scrollReveal from '../../utils';
+import { projects } from "../../data";
+import "./Portfolio.scss";
+
 
 export const Portfolio: FC = () => {
   const revealSection = useRef(null);
+
+  const { featured, notable, backend } = projects
 
   useEffect(() => {
     scrollReveal(revealSection)
@@ -29,13 +33,33 @@ export const Portfolio: FC = () => {
             <p className="section-name">Portfolio</p>
           </div>
           <div className="featured-projects load-hidden" ref={revealSection}>
-            <FeaturedProject />
+            {
+              featured.map((project, idx) => <FeaturedProject {...project} reverse={Boolean(idx % 2)} />)
+            }
           </div>
-          <NotableProjects />
+          <div className="notable-projects">
+            <p className="section-name">Notable Projects</p>
+            <div className="grid">
+              {
+                notable.map((project) => <NotableProject {...project} />)
+              }
+            </div>
+          </div>
         </div>
       </div >
 
-      <BackendProjects />
+      <div className="backend-projects container">
+        <div className="section-description">
+          <span className="tagline">backend stuff I have built</span>
+          <p className="section-name">Backend</p>
+        </div>
+        <div className="grid-container">
+          {
+            backend.map(project => <BackendProject {...project} />)
+          }
+
+        </div>
+      </div >
     </div>
   )
 };

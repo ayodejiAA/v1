@@ -27,8 +27,11 @@ export const About: FunctionComponent = () => (
         </div>
 
         <div className="buttons-wrap">
-          <a href="/mail" ><Button fill={false}>Send me mail</Button></a>
-          <a href="/download" ><Button fill={true}>Download Resume</Button></a>
+          <a href="mailto:afolabiayodejia@gmail.com" ><Button fill={false}>Send me mail</Button></a>
+          <a
+            href="https://www.canva.com/design/DAEMl0X5vUM/cRp5DENPimU0bcKN4ZuCDg/view"
+            target="_blank"
+            rel="noopener noreferrer"><Button fill={true}>Download Resume</Button></a>
         </div>
 
       </div>

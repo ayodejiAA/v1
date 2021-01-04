@@ -1,70 +1,49 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 
 import { CompassIcon, GithubLinkIcon, ExternalLinkIcon } from '../../assets/static/';
-import portrait from '../../assets/images/portrait.png'
 
 import './FeaturedProject.scss';
 
-export const FeaturedProject: FunctionComponent = () => (
-  <>
-    <div className="featured-project">
-      <div className="image-section">
-        <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
-      </div>
-      <div className="details">
+interface IFeaturedProject {
+  name: string
+  description: string
+  technologies: string
+  imagePath: string
+  link: string
+  githubLink: string
+  reverse: boolean
+}
 
-        <div className="center">
-          <div className="featured-heading">
-            <span className="project-type-name">FEATURED PROJECT</span>
-          </div>
-          <div className="featured-body">
-            <h2 className="project-name">E-Store</h2>
-            <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
-          </div>
-          <div className="featured-footer">
-            <div className="svg-border"><CompassIcon className="stack-icon" /></div>
-            <div className="techs">
-              <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div className="sidebar">
-          <a href="" title="External" className="link"><ExternalLinkIcon /></a>
-          <a href="" title="Github" className="link"><GithubLinkIcon /></a>
-        </div>
-      </div>
+export const FeaturedProject: FC<IFeaturedProject> = ({ name, description, technologies, imagePath, link, githubLink, reverse }) =>
+(
+  <div className={`featured-project ${reverse && "switch" || ""}`}>
+    <div className="image-section">
+      <img src={`${imagePath}`} className="image" />
     </div>
 
-    <div className="featured-project switch">
-      <div className="image-section">
-        <div className="image" style={{ backgroundImage: `url(${portrait})` }} />
+    <div className="details">
+      <div className="center">
+        <div className="featured-heading">
+          <span className="project-type-name">FEATURED PROJECT</span>
+        </div>
+        <div className="featured-body">
+          <h2 className="project-name">{name}</h2>
+          <p className="description">
+            {description}
+          </p>
+        </div>
+        <div className="featured-footer">
+          <div className="svg-border"><CompassIcon className="stack-icon" /></div>
+          <div className="techs">
+            <p>{technologies}</p>
+          </div>
+        </div>
       </div>
-      <div className="details">
 
-        <div className="center">
-          <div className="featured-heading">
-            <span className="project-type-name">FEATURED PROJECT</span>
-          </div>
-          <div className="featured-body">
-            <h2 className="project-name">E-Store</h2>
-            <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus aut, nulla animi nemo dolor, dolores a aspernatur facere officiis iste excepturi eum optio</p>
-          </div>
-          <div className="featured-footer">
-            <div className="svg-border"><CompassIcon className="stack-icon" /></div>
-            <div className="techs">
-              <p> React, Javascript, Webpack, firebase, redux, redux-sagas</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div className="sidebar">
-          <a href="" title="External" className="link"><ExternalLinkIcon /></a>
-          <a href="" title="Github" className="link"><GithubLinkIcon /></a>
-        </div>
+      <div className="sidebar">
+        <a href={link} target="_blank" rel="noopener noreferrer" title="External" className="link"><ExternalLinkIcon /></a>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer" title="Github" className="link"><GithubLinkIcon /></a>
       </div>
     </div>
-  </>
+  </div>
 )

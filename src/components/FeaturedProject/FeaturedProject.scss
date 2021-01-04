@@ -2,7 +2,7 @@
 $sidebar-border: 1px solid $outerSpaceColor;
 
 .featured-project {
-  height: 500px;
+  height: 440px;
   margin-bottom: 60px;
   display: flex;
 
@@ -19,16 +19,19 @@ $sidebar-border: 1px solid $outerSpaceColor;
   }
 
   .image-section {
-    width: 45%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
 
     .image {
-      background-size: cover;
-      height: 100%;
+      max-width: 100%;
     }
   }
 
   .details {
-    width: 55%;
+    width: 45%;
     background: $darkest-blue;
     display: flex;
 
@@ -40,7 +43,8 @@ $sidebar-border: 1px solid $outerSpaceColor;
         height: 10%;
 
         .project-type-name {
-          font-size: 12px;
+          user-select: none;
+          font-size: 10px;
           font-weight: 600;
           color: $primaryColor;
           letter-spacing: 1px;
@@ -60,7 +64,7 @@ $sidebar-border: 1px solid $outerSpaceColor;
         }
 
         .description {
-          font-size: 15px;
+          font-size: 14px;
           line-height: 1.5em;
         }
       }
@@ -105,7 +109,7 @@ $sidebar-border: 1px solid $outerSpaceColor;
         height: 45px;
         padding: 9px;
         margin: 3px 0;
-        fill:#8c8c8c;
+        fill: #8c8c8c;
 
         &:hover {
           fill: inherit;
@@ -126,7 +130,7 @@ $sidebar-border: 1px solid $outerSpaceColor;
       .details {
         .center {
           .featured-heading {
-            left: 22px
+            left: 22px;
           }
         }
       }
@@ -143,7 +147,7 @@ $sidebar-border: 1px solid $outerSpaceColor;
 
       .center {
         margin: 15px 20px;
-   
+
         .featured-heading {
           top: 15px;
           position: absolute;

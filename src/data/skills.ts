@@ -20,8 +20,9 @@ export default {
   ],
 
   others2: [
-    "Figma",
-    "Swagger Doc",
-    'Photoshop',
+    "Agile",
+    "Software Documentation",
+    "Webpack",
+    'Figma',
   ]
 }

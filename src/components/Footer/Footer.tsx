@@ -26,16 +26,12 @@ export const Footer = () => {
               Have a project or looking for a good developer to join your team?
           </span>
           </div>
-
-          <p className="contact-me-text">
-            I am currently seeking for an opportunity to work in a great team or
-            on your next project.
-        </p>
+          <p className="contact-me-text" />
           <div className="buttons-wrap">
-            <a href="/mail" >
+            <a href="mailto:afolabiayodejia@gmail.com">
               <Button fill={false}>Send me mail</Button>
             </a>
-            <a href="/download">
+            <a href="https://www.canva.com/design/DAEMl0X5vUM/cRp5DENPimU0bcKN4ZuCDg/view" target="_blank" rel="noopener noreferrer">
               <Button fill={true}>Download Resume</Button>
             </a>
 
@@ -62,7 +58,7 @@ export const Footer = () => {
               <LinkedInIcon />
             </a>
             <a
-              href="https://www.twitter.com/agilejsdev"
+              href="https://www.twitter.com/dev_ayo"
               className="link"
               title="Twitter"
             >
