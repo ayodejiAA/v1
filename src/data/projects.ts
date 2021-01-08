@@ -4,7 +4,7 @@ export default {
       name: "E-Store",
       description: "An online clothing store built with React.js and Redux. Displays different product category with features to add items to cart and make payment.",
       technologies: "JavaScript, React.js, Webpack, Firebase, Redux, Redux-Sagas, Stripe",
-      imagePath: require("../assets/images/store.webp").default as string,
+      imagePath: require("../assets/images/store.png").default as string,
       link: "https://this-estore.herokuapp.com",
       githubLink: "https://github.com/ayodejiAA/e-commerce"
     },
@@ -13,7 +13,7 @@ export default {
       description: `Banka is a light-weight core banking application that powers banking 
                     operations like account creation, customer deposit and withdrawals.`,
       technologies: "HTML5, CSS3, JavaScript, Node, Express.js, PostgreSQL, Heroku, Travis",
-      imagePath: require("../assets/images/banka.webp").default as string,
+      imagePath: require("../assets/images/banka.png").default as string,
       link: "https://this-banka.herokuapp.com/",
       githubLink: "https://github.com/ayodejiAA/banka"
     },
@@ -21,7 +21,7 @@ export default {
       name: "Scoreboard",
       description: "A web application for displaying game scores and visualizing overall performance. Users can add new users, award points and set a timer. ",
       technologies: "JavaScript, React.js, Webpack",
-      imagePath: require("../assets/images/scoreboard.webp").default as string,
+      imagePath: require("../assets/images/scoreboard.png").default as string,
       link: "https://scoreboard.ayodejiaa.vercel.app/",
       githubLink: "https://github.com/ayodejiAA/scoreboard"
     },
@@ -45,6 +45,7 @@ export default {
       name: "Admin Post Notifier",
       description: "A wordpress plugin that sends out notifications based on new posts pending review.",
       githubLink: "https://github.com/ayodejiAA/admin-post-notifier",
+      link: "https://wordpress.org/plugins/admin-post-notifier/",
       technologies: "PHP Wordpress OOP",
     }
   ],

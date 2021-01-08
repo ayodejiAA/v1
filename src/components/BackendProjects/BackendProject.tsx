@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import { GithubLinkIcon, DocLinkIcon } from '../../assets/static';
-import portrait from '../../assets/images/portrait.webp'
+import portrait from '../../assets/images/portrait.png'
 import './BackendProject.scss';
 
 interface IBackendProject {

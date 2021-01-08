@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Button } from '../common/Button/Button';
-import portrait from '../../assets/images/portrait.webp'
+import portrait from '../../assets/images/portrait.png'
 
 import "./About.scss";
 
